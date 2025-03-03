@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: white;
+  font-family: sans-serif;
+}
+
+.netflixLogo{
+  width: 92px;
+  margin: 0px 25px 0px 50px;
+}
+
+.NavBar{
+  background-color: #141414;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.NavList{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+}
+
+.Nava{
+  text-decoration: none;
+  color: white;
+  transition-duration: .6s;
+  font-size: 15px;
+}
+
+.Nava:hover{
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.secondNavList{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondNavListElement{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.secondNavListElement:hover{
+  cursor: pointer;
+}
+
+.secondNavListElement img{
+  filter: invert(1);
+  width: 30px;
+}
