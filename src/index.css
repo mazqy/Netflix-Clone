@@ -3,10 +3,13 @@
   padding: 0;
 }
 
-body{
-  background-color: white;
+body {
+  background-color: #141414;
   font-family: sans-serif;
+
 }
+
+
 
 .netflixLogo{
   width: 92px;
@@ -18,6 +21,8 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
 
 .NavList{
@@ -66,4 +71,45 @@ body{
 .secondNavListElement img{
   filter: invert(1);
   width: 30px;
+}
+
+.Banner{
+  padding: 200px 0px 0px 60px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  gap: 10px;
+}
+
+.Banner h2{
+  font-size: 30px;
+  color: white;
+}
+
+.Banner p{
+  font-size: 20px;
+  color: white;
+}
+
+.netflixBannerImg {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.netflixBannerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.netflixBannerImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right ,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
